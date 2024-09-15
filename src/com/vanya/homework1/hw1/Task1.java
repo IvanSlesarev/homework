@@ -1,4 +1,4 @@
-package com.vanya.homework1;
+package com.vanya.homework1.hw1;
 
 import java.util.Scanner;
 
