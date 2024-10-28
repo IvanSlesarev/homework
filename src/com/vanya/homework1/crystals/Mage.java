@@ -16,12 +16,12 @@ public class Mage implements Runnable {
     public void run() {
         while (!crystal.hasEnoughCrystals()) {
 
-            int red = random.nextInt(4) + 2; // от 2 до 5
-            int white = random.nextInt(4) + 2; // от 2 до 5
+            int red = random.nextInt(4) + 2;
+            int white = random.nextInt(4) + 2;
             crystal.addCrystals(red, white);
             System.out.println(name + " собрал " + red + " красных и " + white + " белых кристаллов.");
 
-            int crystalsToSend = random.nextInt(4) + 2; // от 2 до 5
+            int crystalsToSend = random.nextInt(4) + 2;
             if (crystal.getRedCrystals() > 0 || crystal.getWhiteCrystals() > 0) {
                 System.out.println(name + " отправляет ракету с " + crystalsToSend + " кристаллами.");
 
